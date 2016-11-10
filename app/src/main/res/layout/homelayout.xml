@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <FrameLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/image"/>
+
+    </FrameLayout>
+    <TableLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:padding="10dp">
+
+        <TableRow>
+            <TextView
+                android:text="金币100个"
+                android:id="@+id/textViewone" />
+
+            <Button
+                android:text="$6.00"
+                android:id="@+id/buyone" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="金币100个"
+                android:id="@+id/textViewtwo" />
+
+            <Button
+                android:text="$6.00"
+                android:id="@+id/buytwo" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="金币100个"
+                android:id="@+id/textViewthr" />
+
+            <Button
+                android:text="$6.00"
+                android:id="@+id/buythr" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="金币100个"
+                android:id="@+id/textViewfour" />
+
+            <Button
+                android:text="$6.00"
+                android:id="@+id/buyfour" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="金币100个"
+                android:id="@+id/textViewfive" />
+
+            <Button
+                android:text="$6.00"
+                android:id="@+id/buyfive" />
+        </TableRow
+            >
+
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <FrameLayout
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/me"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/infobuttonlogin"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="login/register"
+                android:id="@+id/textView"
+                android:layout_below="@+id/infobuttonlogin"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tou"
+            android:text="我的订单"
+            android:id="@+id/order"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tou"
+            android:text="抵用券"
+            android:id="@+id/ticket"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tou"
+            android:text="联系客服"
+            android:id="@+id/customer"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"/>
+    </LinearLayout>
+</LinearLayout>
+
